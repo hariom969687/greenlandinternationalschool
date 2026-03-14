@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission | Greenland International School</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+    <img src="C:\Users\MindTech Gyaan\Desktop\Gemini\logo.jpeg" alt="Greenland International School" class="school-logo">
+    <div class="logo-text">
+        <h1>GREENLAND</h1>
+        <p>INTERNATIONAL SCHOOL</p>
+    </div>
+</a>
+        <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="curriculum.html">Curriculum</a></li>
+                <li><a href="admission.html">Admission</a></li>
+				<li><a href="admission-form.html">Student Registration</a></li>
+				<li><a href="prospectus.pdf" download>Prospectus</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="section-title">
+                <h2>Admission & Calendar</h2>
+                <div class="line"></div>
+            </div>
+            <div class="admin-grid">
+                <div class="admin-box">
+                    <i class="fas fa-user-graduate"></i>
+                    <h3 style="color: var(--primary-color); margin-bottom: 15px;">Admission Process</h3>
+                    <p style="margin-bottom: 10px;">Admission is granted on the basis of registration, and pre-Admission Test.</p>
+                    <p>After registering, a student has to qualify in the entrance written test for the respective class. After qualifying, he/she can take admission.</p>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 20px;">Register Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="admin-box">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3 style="color: var(--primary-color); margin-bottom: 15px;">Academic Calendar</h3>
+                    <p style="margin-bottom: 10px;">The school session begins in <strong>April</strong>.</p>
+                    <p>The session closes in the 3rd week of May for summer vacation till the 3rd week of June. The school is also closed for Gazetted holidays.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer><p>&copy; 2026-27 Greenland International School. All Rights Reserved.</p></footer>
+    <script> document.getElementById('mobile-menu').addEventListener('click', () => { document.getElementById('nav-links').classList.toggle('active'); }); </script>
+</body>
+</html>

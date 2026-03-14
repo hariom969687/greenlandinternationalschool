@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Greenland International School</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+    <img src="C:\Users\MindTech Gyaan\Desktop\Gemini\logo.jpeg" alt="Greenland International School" class="school-logo">
+    <div class="logo-text">
+        <h1>GREENLAND</h1>
+        <p>INTERNATIONAL SCHOOL</p>
+    </div>
+</a>
+        <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="curriculum.html">Curriculum</a></li>
+                <li><a href="admission.html">Admission</a></li>
+				<li><a href="admission-form.html">Student Registration</a></li>
+				<li><a href="prospectus.pdf" download>Prospectus</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section bg-light">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <div class="line"></div>
+                <p style="margin-top:10px;">We would love to hear from you!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 style="font-size: 2rem; color: var(--primary-color); margin-bottom: 30px;">Get In Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <span><strong>Address:</strong><br>Siraj Nagar, Pakriyar Purab Patti,<br>Nagar Panchayat Seorahi,<br>Kushinagar (U.P.) 274406</span></p>
+                    <p><i class="fas fa-phone-alt"></i> <span><strong>Mobile:</strong><br>+91 7880340188, 7880397588</span></p>
+                    <p><i class="fas fa-envelope"></i> <span><strong>Email:</strong><br>info@glis.in</span></p>
+                    <p><i class="fas fa-id-badge"></i> <span><strong>Affiliation No:</strong><br>2018875612</span></p>
+                </div>
+                <div class="contact-form-container">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 20px;">Send us a message</h3>
+                    <form id="contactForm">
+                        <input type="text" id="name" placeholder="Student/Parent Name" required>
+                        <input type="tel" id="phone" placeholder="Mobile Number" required>
+                        <select id="class" required>
+                            <option value="">Select Class for Admission</option>
+                            <option value="Pre-Primary">Pre-Primary</option>
+                            <option value="Primary">Primary (1-5)</option>
+                            <option value="Middle">Middle (6-8)</option>
+                            <option value="Secondary">Secondary (9-10)</option>
+                            <option value="Senior Secondary">Senior Secondary (11-12)</option>
+                        </select>
+                        <textarea id="message" rows="5" placeholder="Your Query"></textarea>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Enquiry <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer><p>&copy; 2026-27 Greenland International School. All Rights Reserved. Under the AEGIS of M.J.A.S.S.</p></footer>
+
+    <script>
+        document.getElementById('mobile-menu').addEventListener('click', () => { document.getElementById('nav-links').classList.toggle('active'); });
+        
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            let name = document.getElementById('name').value;
+            alert("Thank You " + name + "!\nYour enquiry has been successfully submitted to Greenland International School. We will contact you at the earliest.");
+            this.reset();
+        });
+    </script>
+</body>
+</html>
